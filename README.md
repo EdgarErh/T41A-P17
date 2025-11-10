@@ -57,7 +57,7 @@ Este índice permite acelerar consultas como:
 SELECT * FROM usuarios
 WHERE data @> '{"activo": true}';
 ```
-
+Sin el índice GIN, PostgreSQL tendría que escanear toda la tabla. Con el índice, puede encontrar los registros mucho más rápido.
 ---
 
 ## 🧪 Pruebas unitarias (usando pgTAP)
